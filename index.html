@@ -20,67 +20,79 @@
     class="min-h-screen grid items-center bg-neutral-vdarkblue font-Overpass"
   >
     <main>
-      <div
-        class="container w-[90%] m-auto p-8 rounded-xl bg-neutral-darkblue grid gap-6"
-      >
-        <img
-          class="bg-neutral-lightgrey/10 p-3 rounded-full"
-          src="images/icon-star.svg"
-          alt=""
-        />
-        <h1 class="text-2xl text-white">How did we do?</h1>
-        <p class="text-neutral-lightgrey text-sm">
-          Please let us know how we did with your support request. All feedback
-          is appreciated to help us improve our offering!
-        </p>
-        <div class="ratings flex justify-between">
+      <div class="containers">
+        <div
+          class="review w-[90%] max-w-[400px] m-auto p-8 rounded-xl bg-neutral-darkblue grid gap-6"
+        >
+          <img
+            class="bg-neutral-lightgrey/10 p-3 rounded-full"
+            src="images/icon-star.svg"
+            alt=""
+          />
+          <h1 class="text-2xl text-white">How did we do?</h1>
+          <p class="text-neutral-lightgrey text-sm">
+            Please let us know how we did with your support request. All
+            feedback is appreciated to help us improve our offering!
+          </p>
+          <div class="ratings flex justify-between">
+            <button
+              class="rate bg-neutral-lightgrey/10 rounded-full w-12 h-12 flex justify-center items-center text-sm text-white/50 hover:bg-neutral-lightgrey focus:bg-primary-orange"
+            >
+              1
+            </button>
+            <button
+              class="rate bg-neutral-lightgrey/10 rounded-full w-12 h-12 flex justify-center items-center text-sm text-white/50 hover:bg-neutral-lightgrey focus:bg-primary-orange"
+            >
+              2
+            </button>
+            <button
+              class="rate bg-neutral-lightgrey/10 rounded-full w-12 h-12 flex justify-center items-center text-sm text-white/50 hover:bg-neutral-lightgrey focus:bg-primary-orange"
+            >
+              3
+            </button>
+            <button
+              class="rate bg-neutral-lightgrey/10 rounded-full w-12 h-12 flex justify-center items-center text-sm text-white/50 hover:bg-neutral-lightgrey focus:bg-primary-orange"
+            >
+              4
+            </button>
+            <button
+              class="rate bg-neutral-lightgrey/10 rounded-full w-12 h-12 flex justify-center items-center text-sm text-white/50 hover:bg-neutral-lightgrey focus:bg-primary-orange"
+            >
+              5
+            </button>
+          </div>
           <button
-            class="bg-neutral-lightgrey/10 rounded-full w-12 h-12 flex justify-center items-center text-sm text-white/50 hover:bg-neutral-lightgrey focus:bg-primary-orange"
+            class="submit-btn w-full bg-primary-orange text-white rounded-3xl font-semibold tracking-widest p-3 text-sm hover:bg-white hover:text-primary-orange"
           >
-            1
-          </button>
-          <button
-            class="bg-neutral-lightgrey/10 rounded-full w-12 h-12 flex justify-center items-center text-sm text-white/50 hover:bg-neutral-lightgrey focus:bg-primary-orange"
-          >
-            2
-          </button>
-          <button
-            class="bg-neutral-lightgrey/10 rounded-full w-12 h-12 flex justify-center items-center text-sm text-white/50 hover:bg-neutral-lightgrey focus:bg-primary-orange"
-          >
-            3
-          </button>
-          <button
-            class="bg-neutral-lightgrey/10 rounded-full w-12 h-12 flex justify-center items-center text-sm text-white/50 hover:bg-neutral-lightgrey focus:bg-primary-orange"
-          >
-            4
-          </button>
-          <button
-            class="bg-neutral-lightgrey/10 rounded-full w-12 h-12 flex justify-center items-center text-sm text-white/50 hover:bg-neutral-lightgrey focus:bg-primary-orange"
-          >
-            5
+            SUBMIT
           </button>
         </div>
-        <button
-          class="w-full bg-primary-orange text-white rounded-3xl font-semibold tracking-widest p-3 text-sm hover:bg-white hover:text-primary-orange"
+
+        <div
+          class="hidden success w-[90%] max-w-[400px] m-auto p-9 rounded-xl bg-neutral-darkblue grid gap-10"
         >
-          SUBMIT
-        </button>
+          <div class="info m-auto grid gap-6">
+            <img
+              class="text-center m-auto"
+              src="images/illustration-thank-you.svg"
+              alt=""
+            />
+            <p
+              class="selection-result text-center bg-neutral-lightgrey/10 rounded-full mr-auto ml-auto p-3 pb-1 pt-2 text-[0.9em] text-primary-orange"
+            >
+              You selected <span class="selection-number"></span> out of 5
+            </p>
+          </div>
+          <div class="appreciation text-center grid gap-3">
+            <h2 class="text-white text-2xl">Thank you!</h2>
+            <p class="text-neutral-lightgrey text-sm">
+              We appreciate you taking the time to give a rating. If you ever
+              need more support, don’t hesitate to get in touch!
+            </p>
+          </div>
+        </div>
       </div>
     </main>
-    <!-- Rating state start -->
-
-    <!-- How did we do? Please let us know how we did with your support request. All
-    feedback is appreciated to help us improve our offering! 1 2 3 4 5 Submit -->
-
-    <!-- Rating state end -->
-
-    <!-- Thank you state start -->
-
-    <!-- You selected -->
-    <!-- Add rating here -->
-    <!-- out of 5 Thank you! We appreciate you taking the time to give a rating. If
-    you ever need more support, don’t hesitate to get in touch! -->
-
-    <!-- Thank you state end -->
+    <script src="app.js"></script>
   </body>
 </html>
